@@ -1,0 +1,314 @@
+
+.box {
+     background-color: red;
+     height: 300px;
+}
+
+
+          /* Scroll to top  */
+.scrollToTop {
+     display: none;
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     padding: 20px;
+     background-color: black;
+}
+/* #0fbcf9   #575fcf   #1abc9c    */
+
+
+/************ JQuery practice *************/
+
+/***Main menu **/
+.h-bars {
+     background-color: #0fbcf9;
+     padding: 12px;
+}
+.h-bars a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+}
+.main-menu {
+     background-color: #0fbcf9;
+}
+.main-menu  ul {
+     padding: 0;
+     margin: 0;
+}
+.main-menu > ul::after {
+     content: "";
+     display: block;
+     clear: both;
+}
+.main-menu > ul > li {
+     list-style: none;
+     float: left;
+}
+.main-menu ul li {
+     position: relative;
+}
+.main-menu > ul > li > a,
+.main-menu ul ul a {
+     display: inline-block;
+     padding: 10px 25px;
+     color: white;
+     text-decoration: none;
+     background-color: transparent;
+}
+.main-menu > ul > li:hover > a {
+     background: #575fcf;
+}
+
+     /* sub menu  */
+.main-menu>  ul >li:hover >ul{
+     display: block;
+}
+.main-menu ul ul {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #575fcf;
+}
+.main-menu ul ul li a {
+     background-color: transparent;
+}
+
+.main-menu ul ul ul {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 100%;
+     z-index: 1;
+     background-color: #575fcf;
+}
+.main-menu ul ul li {
+     list-style: none;
+}
+.main-menu ul ul li:hover ul {
+     display: block;
+}
+.main-menu ul ul li a {
+     min-width: 180px;
+}
+.main-menu ul ul li:hover a{
+     background-color: #1abc9c;
+}
+.main-menu ul ul ul li:hover a{
+     background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .h-bars {
+     background-color: #0fbcf9;
+     padding: 12px;
+}
+.h-bars a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+}
+.main-menu{
+     margin: 40px 0;
+     background-color: #0fbcf9;
+}
+.main-menu ul{
+     padding: 0;
+     margin: 0;
+}
+.main-menu > ul > li{
+     list-style: none;
+     float: left;
+     position: relative;
+}
+.main-menu::after {
+     content: "";
+     clear: both;
+     display: block;
+}
+.main-menu ul li a {
+     display: inline-block;
+     text-decoration: none;
+     padding: 10px 25px;
+     color: white;
+}
+.main-menu > ul > li:hover > a {
+     background-color: #575fcf;
+} */
+
+     /* For submenu */
+/* 
+@keyframes slideUp {
+     0% {
+          top: 100px;
+     }
+     100%{
+          top: 100%;
+     }
+}
+.main-menu ul ul li {
+     list-style: none;
+}
+.main-menu ul ul li a {
+     min-width: 150px;
+} 
+.main-menu ul ul li:hover a{
+     background-color: #1abc9c;
+} */
+
+
+
+
+
+
+ /***********************/
+.advertisement{
+     width: 400px;
+     position: relative;
+}
+.close-advertisement {
+     position: absolute;
+     top: 0;
+     left: 0;
+     font-size: 20px;
+     color: red;
+     text-decoration: none;
+}
+.advertisement img {
+     width: 100%;
+}
+
+
+
+
+
+
+
+
+/************ Card making *************/
+.card-text {
+     color:  #C5CFDC;
+     font-size: 1.10rem!important;
+}
+.card-title {
+     color: #329CCE;
+}
+
+
+/****** Adding a vertical bar before a blockquote ********/
+.fucking-container {
+     border: 1px solid #dee2e6;
+     border-radius: 4px;
+     position: relative;
+}
+.fucking-container > figure  {
+     border-left: 5px solid #dddddd;
+}
+.fucking-container::before {
+     content: "Example";
+     display: block;
+     clear: both;
+     position:absolute;
+     top: 15px;
+     left: 15px;
+     color: #9595A3;
+}
+
+/* --------------------------------------------- */
+/***Main menu **/
+/* .h-bars {
+     background-color: #0fbcf9;
+     padding: 12px;
+}
+.h-bars a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+}
+.main-menu{
+     margin: 40px 0;
+     background-color: #0fbcf9;
+}
+.main-menu ul{
+     padding: 0;
+     margin: 0;
+}
+.main-menu > ul > li{
+     list-style: none;
+     float: left;
+     position: relative;
+}
+.main-menu::after {
+     content: "";
+     clear: both;
+     display: block;
+}
+.main-menu ul li a {
+     display: inline-block;
+     text-decoration: none;
+     padding: 10px 25px;
+     color: white;
+}
+.main-menu > ul > li:hover > a {
+     background-color: #575fcf;
+}*/
+
+     /* For submenu */
+/* .main-menu > ul > li:hover ul {
+     display: block;
+}
+.main-menu > ul li > ul {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #575fcf;
+     animation-name: slideUp ;
+     animation-duration: 0.3s;
+     animation-timing-function: cubic-bezier(.18,.89,.38,1.5);
+}
+@keyframes slideUp {
+     0% {
+          top: 100px;
+     }
+     100%{
+          top: 100%;
+     }
+}
+.main-menu ul ul li {
+     list-style: none;
+}
+.main-menu ul ul li a {
+     min-width: 150px;
+} 
+.main-menu ul ul li:hover a{
+     background-color: #1abc9c;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
